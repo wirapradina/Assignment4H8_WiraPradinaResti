@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asssigment 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo"></a>
+        <ul class="navbar-menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#inventory">INVENTORY</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="profile.png" alt="Profile" />
+          </div>
+
+          <div class="profile-info">
+            <h1 class="profile-name" id="display-nama">Wira Pradina</h1>
+            <h2 class="profile-role" id="display-role">Front End Developer</h2>
+            
+            <div class="profile-buttons">
+              <button class="edit-btn" id="btn-edit">Edit</button>
+              <button class="resume-btn">Resume</button>
+            </div>
+          </div>
+          
+          <div class="additional-info">
+            <div class="info-labels">
+              <p>Availability</p>
+              <p>Usia</p>
+              <p>Lokasi</p>
+              <p>Pengalaman</p>
+              <p>Email</p>
+            </div>
+            <div class="info-values">
+              <p id="display-availability">: Full Time</p>
+              <p id="display-usia">: 20</p>
+              <p id="display-lokasi">: Yogyakarta</p>
+              <p id="display-experience">: 1</p>
+              <p id="display-email">: email@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="form-container">
+            <div class="form-group">
+              <label>Nama</label>
+              <input id="nama" type="text" placeholder="Nama Anda" />
+            </div>
+            <div class="form-group">
+              <label>Role</label>
+              <input id="role" type="text" placeholder="Role Anda" />
+            </div>
+            <div class="form-group">
+              <label>Availability</label>
+              <input id="availability" type="text" placeholder="Availability" />
+            </div>
+            <div class="form-group">
+              <label>Usia</label>
+              <input id="usia" type="number" placeholder="Usia Anda" />
+            </div>
+            <div class="form-group">
+              <label>Lokasi</label>
+              <input id="lokasi" type="text" placeholder="Lokasi Anda" />
+            </div>
+            <div class="form-group">
+              <label>Years Experience</label>
+              <input id="experience" type="number" placeholder="Years Experience" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input id="email" type="email" placeholder="Email Anda" />
+            </div>
+            
+            <div class="modal-buttons">
+              <button id="btn-submit" class="submit-btn">Submit</button>
+              <button id="btn-kembali" class="kembali-btn">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
